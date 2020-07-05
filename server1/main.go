@@ -69,12 +69,6 @@ func deletePerson(w http.ResponseWriter, req *http.Request) {
 	w.Write([]byte("404 Not found"))
 }
 
-func routes() {
-	// init router
-	r := mux.NewRouter()
-	r.PathPrefix("/").Handler(http.FileServer(http.Dir("./statics")))
-}
-
 func main() {
 	router := mux.NewRouter()
 
@@ -82,8 +76,7 @@ func main() {
 	router.HandleFunc("/people/{id}", getPerson).Methods("GET")
 	router.HandleFunc("/people/{id}", addPeople).Methods("POST")
 	router.HandleFunc("/people/{id}", deletePerson).Methods("DELETE")
-
-	routes()
+	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./static/")))
 
 	log.Fatal(http.ListenAndServe(":3000", router))
 
