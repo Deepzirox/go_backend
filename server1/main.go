@@ -16,15 +16,15 @@ import (
 	Address: pointer to struct Address that contains {city, state}
 */
 type Person struct {
-	ID        string   `json:"id,omitempPersonty"`
-	FirstName string   `json:"firstname,omitempPersonty"`
-	LastName  string   `json:"lastname,omitempPersonty"`
-	Address   *Address `json:"address,omitempPersonty"`
+	ID        string   `json:"id,omitempty"`
+	FirstName string   `json:"firstname,omitempty"`
+	LastName  string   `json:"lastname,omitempty"`
+	Address   *Address `json:"address,omitempty"`
 }
 
 type Address struct {
-	City  string `json:"city,omitempPersonty"`
-	State string `json:"state,omitempPersonty"`
+	City  string `json:"city,omitempty"`
+	State string `json:"state,omitempty"`
 }
 
 var people []Person
