@@ -9,9 +9,6 @@ import (
 )
 
 /*
-	upper :101 - 132
-	lower: 141 - 172
-
 	rand: (max-min)+min
 */
 func KeyGen(ranges []uint) (newID string) {
