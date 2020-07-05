@@ -41,7 +41,7 @@ func getPerson(w http.ResponseWriter, req *http.Request) {
 			return
 		}
 	}
-	w.Write([]byte("<h1>INVALIDOOOOO</h1>"))
+	w.Write([]byte("Invalid ID"))
 }
 
 func addPeople(w http.ResponseWriter, req *http.Request) {
