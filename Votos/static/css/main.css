@@ -1,0 +1,28 @@
+.contain {
+    max-width:960px;
+    text-align:center;
+}
+
+
+section{
+    position: relative;
+    left: 140px;
+}
+
+section > .category {
+   position:relative;
+   display: inline-block;
+   float:left;
+   padding:10px;
+}
+
+section > .category > img {
+    width: 340px;
+    height: 190px;
+}
+
+header > h1{
+    background: red;
+    margin-top: 0;
+    margin-bottom: 0;
+}

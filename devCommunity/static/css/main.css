@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-image: url(../img/background.png); */
+    background-color: rgb(21, 27, 104);
+}
+
+
+/** Jumbotron */
+header > .jumbo{
+    background: rgba(47, 0, 255, 0.288);
+    background-image: url(../img/city.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+header > nav{
+    font-family: 'Permanent Marker', cursive;
+    margin-top: -34px;
+    background: rgba(47, 0, 255, 0.288);
+}
+
+
+/**navbar **/
+
+#itemsbar{
+    color: green;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}

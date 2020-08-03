@@ -1,4 +1,4 @@
 body{
-    background: black;
-    color: rgb(253, 253, 253)
+    background-image: url("../img/background.png");
+    color: rgb(253, 253, 253);
 }

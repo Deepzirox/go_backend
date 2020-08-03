@@ -1,5 +1,10 @@
 package main
 
+import fmt(
+	"os"
+	"fmt"
+)
+
 func main() {
-	array := []uint{1, 2, 3}
+	
 }

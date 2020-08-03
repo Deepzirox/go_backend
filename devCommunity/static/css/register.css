@@ -1,0 +1,22 @@
+
+
+.container > form{
+    color: green;
+}
+
+.container{
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 90%;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgba(0, 0, 0, 0.288);
+}
+
+.container > h3{
+    text-align: center;
+    color: green;
+}
